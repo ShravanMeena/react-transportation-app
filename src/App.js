@@ -9,7 +9,11 @@ function App (props) {
     <div>
       <Title title='Welcome to React Transportation' subtitle='The best place to buy vehicles online' />
       <Options option='Choose Options' />
-      <VehicleInfo />
+      <VehicleInfo 
+        showCars={true}
+        showTrucks={true}
+        showConvertibles={true}
+      />
     </div>
   );
 };
