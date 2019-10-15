@@ -1,19 +1,23 @@
-import React from 'react';
-import './VehiclesFolder/style.css';
+import React from "react"
+import { Form, Dropdown, DropdownButton } from 'react-bootstrap'
+import"./VehiclesFolder/style.css"
 
 const Options = (props) => {
-  return (
-    <div>
-      <h2 className='ChangeProp'>{props.option}</h2>
-      <span>New Only</span><input type='checkbox' checked />
-      <select>
-        <option value='All'>All</option>
-        <option value='Cars'>Cars</option>
-        <option value='Trucks'>Trucks</option>
-        <option value='Convertibles'>Convertibles</option>
-      </select>
-    </div>
-  );
+	return(
+			<div>
+				<h2 className="ChangeProp">{props.option}</h2>
+				<Form.Group controlId="formBasicCheckbox">
+    				<Form.Check type="checkbox" label="New Only" />
+  				</Form.Group>
+        <DropdownButton id="dropdown-basic-button" title="Filters">
+          <Dropdown.Item href="#/action-1">All</Dropdown.Item>
+          <Dropdown.Item href="#/action-1">Cars</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Trucks</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Convertibles</Dropdown.Item>
+        </DropdownButton>
+			</div>
+
+		)
 };
 
 export default Options;

@@ -6,9 +6,18 @@ import Convertibles from './VehiclesFolder/Convertibles';
 const VehicleInfo = (props) => {
   return (
     <div>
-      <Cars />
-      <Trucks />
+      {props.showCars ? 
+        <Cars />
+        : null
+      }
+      {props.showTrucks ? 
+        <Trucks />
+        : null
+      }
+      {props.showConvertibles ? 
       <Convertibles />
+      : null
+      }
     </div>
   );
 };
