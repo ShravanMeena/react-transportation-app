@@ -6,6 +6,7 @@ table {
 }
 
 td, th {
+  width: 25%;
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
