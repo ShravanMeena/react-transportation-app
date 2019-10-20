@@ -1,35 +1,37 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 
-const TableTrucks = (props) => {
-  return (
-    <div>
-      <h2 className='ChangeProp'>{props.title}</h2>
-      <table>
+const TableTrucks = ({ title, year, model, price }) => (
+  <div>
+    <h2 className="ChangeProp">{title}</h2>
+    <table>
+      <thead>
         <tr>
           <th>Year</th>
           <th>Model</th>
           <th>Price</th>
           <th>Buy</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
-          <td>{props.year}</td>
-          <td>{props.model}</td>
-          <td>${props.price}</td>
-          <td><button>Buy Now</button></td>
+          <td>{year}</td>
+          <td>{model}</td>
+          <td>${price}</td>
+          <td>
+            <button>Buy Now</button>
+          </td>
         </tr>
-      </table>
-    </div>
-  );
-};
+      </tbody>
+    </table>
+  </div>
+);
 
-const Trucks = (props) => {
-  return (
-    <div>
-      <TableTrucks title='Trucks' year='2014' model='D' price='18000' />
-      <TableTrucks year='2013' model='E' price='5200' />
-    </div>
-  );
-};
+const Trucks = () => (
+  <div>
+    <TableTrucks title="Trucks" year="2014" model="D" price="18000" />
+    <TableTrucks year="2013" model="E" price="5200" />
+  </div>
+);
 
 export default Trucks;
