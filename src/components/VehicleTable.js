@@ -1,8 +1,9 @@
 import React from "react";
+import Title from "./Title";
 
-export default ({ title, year, model, price }) => (
+export default ({ title, subtitle, year, model, price }) => (
   <div>
-    {title && <h2 className="ChangeProp">{title}</h2>}
+    <Title title={title} subtitle={subtitle} />
     <table>
       <thead>
         <tr>
