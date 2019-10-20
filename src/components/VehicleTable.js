@@ -2,7 +2,7 @@ import React from "react";
 
 export default ({ title, year, model, price }) => (
   <div>
-    <h2 className="ChangeProp">{title}</h2>
+    {title && <h2 className="ChangeProp">{title}</h2>}
     <table>
       <thead>
         <tr>

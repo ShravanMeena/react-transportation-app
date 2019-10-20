@@ -11,7 +11,7 @@ const App = () => (
       subtitle="The best place to buy vehicles online"
     />
     <Options option="Choose Options" />
-    <VehicleInfo showCars={true} showTrucks={true} showConvertibles={true} />
+    <VehicleInfo showCars showTrucks showConvertibles />
   </div>
 );
 
