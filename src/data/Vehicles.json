@@ -1,0 +1,20 @@
+
+{
+    "Vehicles": [
+        {
+            "Id": 1,
+            "Type": "Truck",
+            "Year": "2014",
+            "Model": "D",
+            "Price": 1800
+        },
+        {
+            "Id": 2,
+            "Type": "Truck",
+            "Year": "2013",
+            "Model": "E",
+            "Price": 1500
+        }
+
+    ]
+}
