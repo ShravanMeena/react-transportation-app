@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../Table/Table.css";
 
 const Table = (props) => {
@@ -55,15 +55,17 @@ const Table = (props) => {
   ]
 
   const vehiclesList = vehicles.map((vehicles, index) => 
-    <tr key={vehicles.id} className={props.selectedCategory === 'All' ? 'showRow' : props.selectedCategory !== vehicles.Category ? 'hideRow' : 'showRow'}>
+    <tr key={vehicles.id} 
+        className={props.selectedCondition && vehicles.Condition === 'Used' ? 'hideRow' : props.selectedCategory === 'All' ? 'showRow' : props.selectedCategory !== vehicles.Category ? 'hideRow' : 'showRow' }>
       <th scope="row">{index}</th>
       <td>{vehicles.Category}</td>
       <td>{vehicles.Model}</td>
       <td>{vehicles.Year}</td>
+      <td>{vehicles.Condition}</td>
       <td>{vehicles.Price}</td>
   </tr>
   );
-  console.log(vehiclesList);
+
   return (
     <div>
      <table className="table">
@@ -73,6 +75,7 @@ const Table = (props) => {
       <th scope="col">Category</th>
       <th scope="col">Model</th>
       <th scope="col">Year</th>
+      <th scopt="col">Conditon</th>
       <th scope="col">Price</th>
     </tr>
   </thead>
