@@ -1,20 +1,19 @@
-
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+  font - family: arial, sans - serif;
+  border - collapse: collapse;
+  width: 100 % ;
 }
 
 td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+  border: 1 px solid# dddddd;
+  text - align: left;
+  padding: 8 px;
 }
 
-tr:nth-child(odd) {
-  background-color: #dddd;
-}
+tr: nth - child(odd) {
+      background - color: #dddd;
+  }
 
-.ChangeProp{
-	color: gray;
-}
+  .ChangeProp {
+      color: gray;
+  }
