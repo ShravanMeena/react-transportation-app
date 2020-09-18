@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
-import Title from "./components/Title";
-import Options from "./components/Options";
-import VehicleInfo from "./components/VehicleInfo";
+import { Title, Options, VehicleInfo } from "./components/index";
 
 function App(props) {
   return (
