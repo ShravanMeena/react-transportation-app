@@ -1,14 +1,13 @@
 import React from "react";
-import Cars from "./VehiclesFolder/Cars";
-import Trucks from "./VehiclesFolder/Trucks";
-import Convertibles from "./VehiclesFolder/Convertibles";
+import { Convertibles, Trucks, Cars } from "./Vehicles";
 
 const VehicleInfo = (props) => {
+  const { showCars, showTrucks, showConvertibles } = props;
   return (
     <div>
-      {props.showCars && <Cars />}
-      {props.showTrucks && <Trucks />}
-      {props.showConvertibles && <Convertibles />}
+      {showCars && <Cars />}
+      {showTrucks && <Trucks />}
+      {showConvertibles && <Convertibles />}
     </div>
   );
 };

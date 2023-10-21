@@ -1,8 +1,8 @@
 import React from "react";
+import { Title, Options, VehicleInfo } from "./components";
 import "./App.css";
-import { Title, Options, VehicleInfo } from "./components/index";
 
-function App(props) {
+function App() {
   return (
     <div>
       <Title
